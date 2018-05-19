@@ -35,12 +35,9 @@ public class SerialTest : MonoBehaviour {
 
 	IEnumerator Write(){
 
-//		while (true){
-//			yield return new WaitForSeconds (5f);
-//			serial.WriteLine ("ON");
-//
-//			yield return new WaitForSeconds (5f);
-//			serial.WriteLine ("OFF");
-//		}
+		while (true){
+			yield return new WaitForSeconds (5f);
+			serial.WriteLine ("test send.");
+		}
 	}
 }
