@@ -10,6 +10,7 @@
 
 #### Install
 1. UnityPackageををダブルクリックしてインポートする.
+2. PlayerSettings > Other Settings > Api Compatiblity Level を[.NET 2.0]に変更する.
 
 
 #### Test
