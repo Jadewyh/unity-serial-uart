@@ -10,12 +10,11 @@
 
 #### Install
 1. UnityPackageををダブルクリックしてインポートする.
-2. PlayerSettings > Other Settings > Api Compatiblity Level を[.NET 2.0]に変更する.
 
 
 #### Test
 
-** シリアルを受信するテストシーン **
+*シリアルを受信するテストシーン*
 
 1. testシーンを開く.
 2. Arduinoなどのシリアル通信デバイスを接続.
@@ -25,20 +24,20 @@
 
 #### Method
 
-** 接続 **
+*接続*
 
-	SerialHandler.Connect (string portName, int baud = 9600, int timeout = 1000);
+`SerialHandler.Connect (string portName, int baud = 9600, int timeout = 1000);`
 
-** 受信イベント **
+*受信イベント*
 
-	SerialHandler.OnReceivedLine(string msg);	
+`SerialHandler.OnReceivedLine(string msg);`	
 
-	SerialHandler.OnReceivedByte(byte[] msg);
+`SerialHandler.OnReceivedByte(byte[] msg);`
 
-** 送信 **
+*送信*
 	
-	SerialHandler.Write(string msg);
+`SerialHandler.Write(string msg);`
 	
-	SerialHandler.WriteBytes (string msg);
+`SerialHandler.WriteBytes (string msg);`
 	
-	SerialHandler.WriteLine (string msg);
+`SerialHandler.WriteLine (string msg);`
